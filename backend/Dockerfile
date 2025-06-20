@@ -1,5 +1,9 @@
 FROM python:3.11-slim
 
+# Устанавливаем переменные окружения для Python
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
 WORKDIR /app
 
 # Копируем файл зависимостей
@@ -14,5 +18,5 @@ COPY . .
 # Открываем порт
 EXPOSE 5000
 
-# Запускаем приложение
-CMD ["python", "app.py"] 
+# Запускаем приложение с выводом логов в stdout
+CMD ["python", "-u", "app.py"] 
