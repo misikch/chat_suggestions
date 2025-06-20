@@ -30,6 +30,6 @@ services:
     environment:
       FLASK_ENV: development
       FLASK_DEBUG: 1
-      OPENAI_API_KEY: "sk-or-vv-2aceb7e2b8d4521e26637b8fce102ac02fc1687a6622dabc9d324a46d5f1a1c9"
+      OPENAI_API_KEY: "your_token_here"
       OPENAI_API_BASE_URL: "https://api.vsegpt.ru/v1"
       OPENAI_MODEL_NAME: "google/gemini-2.5-flash-pre"
